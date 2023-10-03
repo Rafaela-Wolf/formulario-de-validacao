@@ -1,0 +1,114 @@
+body {
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+    height: 100vh;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    color: rgba(255, 255, 255, 1);
+    width: 500px;
+    height: 311px;
+    padding-right: 50px;
+}
+
+.texto h1 {
+    font-size: 34px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.texto h2 {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.texto p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 478px;
+}
+
+.formulario input {
+    width: 398px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(168, 168, 168, 1);
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.formulario input#nome, #email, #celular, #mensagem {
+    padding-left: 15px;
+}
+
+.formulario input#mensagem {
+    height: 100px;
+    padding-bottom: 50px;
+}
+
+.validacao {
+    display: none;
+    color: rgba(245, 46, 46, 1);
+    font-size: 9px;
+    font-weight: 400;
+    position: relative;
+    left: 21px;
+    bottom: 16px;
+}
+
+.formulario .campos-obrigatorios {
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.formulario .botao {
+    width: 398px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(60, 204, 135, 1);
+    border-radius: 8px;
+    border-style: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.formulario .botao:hover {
+    background-color: #2F4F2F;
+    transition: 0.3s ease-in-out;
+}
+
+/* ESTILOS PARA VALIDAR AS INFORMAÇÕES */
+
+.formulario input.invalidado {
+    border-color: rgba(245, 46, 46, 1);
+}
+
+.formulario input.validacao {
+    display: block;
+}
+
+.formulario input.validado {
+    border-color: rgba(0, 194, 43, 1);
+}

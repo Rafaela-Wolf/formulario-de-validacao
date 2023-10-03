@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Formulário com validação de dados no JS">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Talvez fazer responsive -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="texto">
+            <h1>Ficou com dúvida?</h1>
+            
+            <h2>Nos mande uma mensagem!</h2>
+
+            <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+
+        <section class="formulario">
+            <form action="index.html" method="post" enctype="multipart/form-data">
+                <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+                <p class="validacao">campo obrigatório</p>
+
+                <input type="text" name="email" id="email" placeholder="Email *">
+                <p class="validacao">campo obrigatório</p>
+
+                <input type="text" name="celular" id="celular" placeholder="Celular *">
+                <p class="validacao">campo obrigatório</p>
+                
+                <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem *">
+                <p class="validacao">campo obrigatório</p>
+            </form>
+
+            <p class="campos-obrigatorios">*campos obrigatórios</p>
+
+            <button class="botao">Enviar</button>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>
