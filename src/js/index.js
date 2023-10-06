@@ -1,3 +1,1 @@
-const enviar = document.getElementsByClassName('.botao');
-
-enviar.addEventListener("click", validate);
+const campoObrigatorio = document.getElementsByClassName('.texto-vermelho');

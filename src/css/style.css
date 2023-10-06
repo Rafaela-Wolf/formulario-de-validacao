@@ -55,7 +55,10 @@ main {
     border: 1px solid #000000;
 }
 
-.formulario input#nome, #email, #celular, #mensagem {
+.formulario input#nome,
+#email,
+#celular,
+#mensagem {
     padding-left: 15px;
 }
 
@@ -64,14 +67,8 @@ main {
     padding-bottom: 50px;
 }
 
-.validacao {
+.formulario .texto-vermelho {
     display: none;
-    color: rgba(245, 46, 46, 1);
-    font-size: 9px;
-    font-weight: 400;
-    position: relative;
-    left: 21px;
-    bottom: 16px;
 }
 
 .formulario .campos-obrigatorios {
@@ -101,14 +98,20 @@ main {
 
 /* ESTILOS PARA VALIDAR AS INFORMAÇÕES */
 
-.formulario input.invalidado {
-    border-color: rgba(245, 46, 46, 1);
-}
-
-.formulario input.validacao {
+.texto-de-invalidacao {
     display: block;
+    color: rgba(245, 46, 46, 1);
+    font-size: 9px;
+    font-weight: 400;
+    position: relative;
+    left: 21px;
+    bottom: 16px;
 }
 
-.formulario input.validado {
+.invalidado {
+border-color: rgba(245, 46, 46, 1);
+}
+
+.validado {
     border-color: rgba(0, 194, 43, 1);
 }
