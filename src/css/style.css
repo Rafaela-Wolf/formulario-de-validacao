@@ -41,7 +41,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 440px;
-    height: 478px;
+    height: 520px;
 }
 
 .formulario input {
@@ -67,14 +67,14 @@ main {
     padding-bottom: 50px;
 }
 
-.formulario .texto-vermelho {
-    display: none;
+.formulario .texto-escondido {
+    opacity: 0;
 }
 
 .formulario .campos-obrigatorios {
     font-size: 15px;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-left: 20px;
 }
 
@@ -98,18 +98,18 @@ main {
 
 /* ESTILOS PARA VALIDAR AS INFORMAÇÕES */
 
-.texto-de-invalidacao {
-    display: block;
+.texto-vermelho {
+    opacity: 1;
     color: rgba(245, 46, 46, 1);
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 400;
     position: relative;
     left: 21px;
-    bottom: 16px;
+    top: -18px;
 }
 
 .invalidado {
-border-color: rgba(245, 46, 46, 1);
+    border: 1px solid rgba(245, 46, 46, 1);
 }
 
 .validado {

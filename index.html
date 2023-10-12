@@ -27,22 +27,22 @@
 
         <section class="formulario">
             <form id="form" action="index.html" method="post" enctype="multipart/form-data">
-                <input type="text" name="nome" id="nome" placeholder="Nome completo *" class="required">
-                <span class="texto-vermelho">campo obrigatório</span>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo *" class="required nome">
+                <label for="nome" class="texto-escondido texto-vermelho">campo obrigatório</label>
 
                 <input type="text" name="email" id="email" placeholder="Email *" class="required">
-                <span class="texto-vermelho">campo obrigatório</span>
+                <label for="email" class="texto-escondido texto-vermelho">campo obrigatório</label>
 
-                <input type="text" name="celular" id="celular" placeholder="Celular *" class="required">
-                <span class="texto-vermelho">campo obrigatório</span>
+                <input type="number" name="celular" id="celular" placeholder="Celular *" class="required">
+                <label for="celular" class="texto-escondido texto-vermelho">campo obrigatório</label>
                 
                 <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem *" class="required">
-                <span class="texto-vermelho">campo obrigatório</span>
+                <label for="mensagem" class="texto-escondido texto-vermelho">campo obrigatório</label>
+
+                <p class="campos-obrigatorios">*campos obrigatórios</p>
+
+                <button class="botao">Enviar</button>
             </form>
-
-            <p class="campos-obrigatorios">*campos obrigatórios</p>
-
-            <button class="botao">Enviar</button>
         </section>
     </main>
 
