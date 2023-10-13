@@ -27,22 +27,21 @@
 
         <section class="formulario">
             <form id="form" action="index.html" method="post" enctype="multipart/form-data">
-                <input type="text" name="nome" id="nome" placeholder="Nome completo *" class="required nome">
-                <label for="nome" class="texto-escondido texto-vermelho">campo obrigatório</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo *" required>
+                <span class="texto-escondido">campo obrigatório</span>
 
-                <input type="text" name="email" id="email" placeholder="Email *" class="required">
-                <label for="email" class="texto-escondido texto-vermelho">campo obrigatório</label>
+                <input type="text" name="email" id="email" placeholder="Email *" required>
+                <span class="texto-escondido">campo obrigatório</span>
 
-                <input type="number" name="celular" id="celular" placeholder="Celular *" class="required">
-                <label for="celular" class="texto-escondido texto-vermelho">campo obrigatório</label>
+                <input type="text" name="celular" id="celular" placeholder="Celular *" required>
+                <span class="texto-escondido">campo obrigatório</span>
                 
-                <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem *" class="required">
-                <label for="mensagem" class="texto-escondido texto-vermelho">campo obrigatório</label>
-
+                <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem *" required>
+                <span class="texto-escondido">campo obrigatório</span>
+            </form>
                 <p class="campos-obrigatorios">*campos obrigatórios</p>
 
-                <button class="botao">Enviar</button>
-            </form>
+                <button type="submit" class="botao">Enviar</button>
         </section>
     </main>
 

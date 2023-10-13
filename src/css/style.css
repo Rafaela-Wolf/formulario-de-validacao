@@ -98,7 +98,7 @@ main {
 
 /* ESTILOS PARA VALIDAR AS INFORMAÇÕES */
 
-.texto-vermelho {
+.formulario .texto-vermelho {
     opacity: 1;
     color: rgba(245, 46, 46, 1);
     font-size: 10px;
@@ -108,10 +108,10 @@ main {
     top: -18px;
 }
 
-.invalidado {
+.formulario input.invalidado {
     border: 1px solid rgba(245, 46, 46, 1);
 }
 
-.validado {
-    border-color: rgba(0, 194, 43, 1);
+.formulario input.validado {
+    border: 1px solid rgba(0, 194, 43, 1);
 }
