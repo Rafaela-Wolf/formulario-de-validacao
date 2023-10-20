@@ -1,54 +1,18 @@
 const botaoEnviar = document.querySelector('.botao');
 
-const inputs = ["nome", "email", "celular", "mensagem"];
+const msgSpan = document.getElementsByTagName('span');
 
-//const nome = document.getElementById('nome');
-
-//const email = document.getElementById('email');
-
-//const celular = document.getElementById('celular');
-
-//const mensagem = document.getElementById('mensagem');
+const inputs = document.querySelectorAll(".campos");
 
 botaoEnviar.addEventListener('click', () => {
-    inputs.forEach(function (input) {
-        if (input.value === "") {
-            input.classList.add("invalidado");
+    inputs.forEach(function (campos, index) {
+        if (campos.value !== "") {
+            campos.classList.add("validado");
         } else {
-            input.classList.add("validado");
+            campos.classList.remove("validado")
+            campos.classList.add("invalidado");
+            msgSpan[index].classList.add("texto-vermelho");
         }
     });
 })
 
-// botaoEnviar.addEventListener('click', () => {
-//     if (nome.value === "") {
-//         nome.classList.add("invalidado");
-//     } else {
-//         nome.classList.add("validado");
-//     }
-// })
-
-// botaoEnviar.addEventListener('click', () => {
-//     if (email.value === "") {
-//         email.classList.add("invalidado");
-//     } else {
-//         email.classList.add("validado");
-//     }
-// })
-
-// botaoEnviar.addEventListener('click', () => {
-//     if (celular.value === "") {
-//         celular.classList.add("invalidado");
-//     } else {
-//         celular.classList.add("validado");
-//     }
-// })
-
-// botaoEnviar.addEventListener('click', () => {
-//     if (mensagem.value === "") {
-//         mensagem.classList.add("invalidado");
-//     } else {
-//         mensagem.classList.add("validado");
-//     }
-// })
-    
