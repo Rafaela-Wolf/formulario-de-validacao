@@ -4,10 +4,13 @@ const msgSpan = document.getElementsByTagName('span');
 
 const inputs = document.querySelectorAll(".campos");
 
-botaoEnviar.addEventListener('click', () => {
+botaoEnviar.addEventListener('click', (e) => {
+    e.preventDefault()
+
     inputs.forEach(function (campos, index) {
         if (campos.value !== "") {
             campos.classList.add("validado");
+            campos.nextElementSibling.classList.remove("texto-vermelho");
         } else {
             campos.classList.remove("validado")
             campos.classList.add("invalidado");
@@ -15,4 +18,3 @@ botaoEnviar.addEventListener('click', () => {
         }
     });
 })
-
