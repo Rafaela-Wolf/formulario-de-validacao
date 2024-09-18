@@ -8,30 +8,30 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .texto {
     color: rgba(255, 255, 255, 1);
-    width: 500px;
-    height: 311px;
-    padding-right: 50px;
+    width: 40%;
+    height: 40%;
 }
 
 .texto h1 {
-    font-size: 34px;
-    font-weight: 900;
+    font-size: 32px;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
 .texto h2 {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 28px;
+    font-weight: 600;
     padding-bottom: 20px;
     text-transform: uppercase;
 }
 
 .texto p {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -41,38 +41,31 @@ main {
     flex-direction: column;
     max-width: 440px;
     width: 100%;
+    height: 100%;
     padding: 20px;
-}
-
-.formulario div {
-    position: relative;
+    border-radius: 5px;
 }
 
 .formulario div .campos {
     width: 100%;
     height: 42px;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
     color: rgba(168, 168, 168, 1);
     border-radius: 5px;
     border: 1px solid #000000;
-    margin-bottom: 15px;
 }
 
 .formulario input#nome,
-#email,
-#celular,
+.formulario input#email,
+.formulario input#celular,
 .formulario textarea#mensagem {
     padding: 15px;
     resize: none;
 }
 
 .formulario textarea#mensagem {
-    height: 100px;
-}
-
-.formulario textarea#mensagem + .texto-vermelho {
-    bottom: 9px;
+    height: 100%;
 }
 
 .formulario .texto-escondido {
@@ -80,7 +73,9 @@ main {
 }
 
 .formulario .campos-obrigatorios {
-    margin-bottom: 10px;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .formulario .botao {
@@ -104,11 +99,9 @@ main {
 .formulario .texto-vermelho {
     opacity: 1;
     color: rgba(245, 46, 46, 1);
-    font-size: 8px;
-    position: absolute;
+    font-size: 10px;
     display: block;
-    z-index: 1;
-    bottom: 5px;
+    padding: 8px 0px 12px; 
 }
 
 .formulario .campos.invalidado {
